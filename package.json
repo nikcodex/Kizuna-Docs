@@ -1,33 +1,28 @@
 {
-  "name": "kizuna-docs",
+  "name": "botspace-discord-bots",
   "type": "module",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
-  "description": "Documentation website for KizunaLink \u2014 the Rust-powered Discord audio engine",
+  "description": "Discord Bot List & Server Discovery Platform like top.gg",
   "scripts": {
-    "dev": "astro dev --host 0.0.0.0",
-    "start": "astro dev --host 0.0.0.0",
-    "build": "astro build",
-    "preview": "astro preview --host 0.0.0.0",
-    "check": "astro check",
-    "astro": "astro",
-    "og": "node scripts/make-og.mjs",
-    "export": "bash scripts/export-to-docs-repo.sh"
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
   },
   "dependencies": {
-    "@astrojs/starlight": "^0.42.0",
-    "astro": "^7.3.1",
-    "sharp": "^0.33.5",
-    "starlight-links-validator": "^0.26.0",
-    "@astrojs/markdown-satteri": "^0.4.0",
-    "satteri": "^0.10.5"
+    "canvas-confetti": "^1.9.4",
+    "lucide-react": "^1.16.0",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4"
   },
-  "engines": {
-    "node": ">=20"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/nikcodex/Kizuna-Docs.git"
-  },
-  "homepage": "https://nikcodex.github.io/Kizuna-Docs/"
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.1.18",
+    "@types/canvas-confetti": "^1.9.0",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.1",
+    "tailwindcss": "^4.1.18",
+    "typescript": "^5.9.3",
+    "vite": "^8.0.0"
+  }
 }
